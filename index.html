@@ -174,4 +174,256 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <div
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-blue-50 text-brandBlue rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-qrcode"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">نظام الباركود والـ QR الذكي</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">تصميم وطباعة ملصقات حرارية غير قابلة للتلف لكل أصل، تتيح لك معرفة تاريخ الجهاز وصياناته وعهدته في ثانية واحدة بكاميرا الهاتف أو السكانر.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-cyan-50 text-brandCyan rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-file-signature"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">دورة مستندية لا ورقية (E-Signature)</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">إرسال إقرارات استلام العهد للموظفين إلكترونياً للتوقيع عليها من الهاتف أو الحاسب، مع معرفة كافة عهد الموظف لحظة إخلاء الطرف.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-amber-50 text-brandGold rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">الربط مع Active Directory / LDAP</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">مزامنة فورية لبيانات الموظفين والأقسام والفروع من دليل المستخدمين في شركتك لتسهيل الدخول الموحد وتوزيع العهد بدقة.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">سحب آلي لمواصفات الأجهزة</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">توفير مئات الساعات من الإدخال اليدوي عبر سحب مواصفات الهاردوير (المعالج، الرامات، الهارد، السيريال، الـ MAC Address) أوتوماتيكياً.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">لوحات تحكم وتقارير إهلاك</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">تقارير حية توضح إجمالي الأصول، قيمتها المالية، تواريخ انتهاء الضمان، والأجهزة ذات الأعطال المتكررة لاتخاذ قرارات شراء سليمة.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-3">خصوصية تامة بدون اشتراكات</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">تثبيت النظام على سيرفرات شركتك الداخلية (On-Premise) أو السحابية الخاصة بك، لتضمن سرية بياناتك 100% دون رسوم تجديد سنوية بالدولار.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section id="calculator" class="py-16 px-4 bg-brandDark text-white">
+        <div class="max-w-5xl mx-auto bg-brandNavy p-8 sm:p-12 rounded-3xl border border-slate-700 shadow-2xl">
+            <div class="text-center mb-10">
+                <span class="bg-brandCyan/20 text-brandCyan px-4 py-1 rounded-full text-xs font-bold">أداة تفاعلية لصناع القرار</span>
+                <h2 class="text-2xl sm:text-4xl font-black mt-3">احسب كم توفر شركتك سنوياً مع أصول تك</h2>
+                <p class="text-slate-300 text-sm mt-2">حرك المؤشرات التالية حسب حجم شركتك لمعرفة حجم الفاقد السنوي الذي يمنعه النظام:</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                
+                <!-- Sliders -->
+                <div class="space-y-8">
+                    <div>
+                        <div class="flex justify-between font-bold mb-2">
+                            <span>إجمالي عدد الأجهزة والأصول التقنية:</span>
+                            <span id="assetsCountDisplay" class="text-brandCyan text-xl font-black">250 جهاز</span>
+                        </div>
+                        <input id="assetsSlider" type="range" min="50" max="3000" step="50" value="250" oninput="calculateROI()" class="w-full accent-brandCyan cursor-pointer h-2 bg-slate-700 rounded-lg">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between font-bold mb-2">
+                            <span>عدد الفروع أو المواقع التشغيلية:</span>
+                            <span id="branchesCountDisplay" class="text-brandCyan text-xl font-black">5 فروع</span>
+                        </div>
+                        <input id="branchesSlider" type="range" min="1" max="100" step="1" value="5" oninput="calculateROI()" class="w-full accent-brandCyan cursor-pointer h-2 bg-slate-700 rounded-lg">
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="bg-slate-900/90 p-8 rounded-2xl border border-brandCyan/30 text-center">
+                    <span class="text-sm text-slate-400 block mb-2">التوفير السنوي التقديري (منع المشتريات المكررة والفواقد + توفير التراخيص):</span>
+                    <div id="savingsDisplay" class="text-4xl sm:text-5xl font-black text-emerald-400 my-4">112,500 ج.م</div>
+                    <p id="hoursDisplay" class="text-xs text-slate-300 mb-6">بالإضافة إلى توفير حوالي <strong>180 ساعة عمل سنوياً</strong> لفريق الـ IT في عمليات الجرد اليدوي.</p>
+                    <button onclick="sendROIViaWhatsApp()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>احصل على خطة تحقيق هذا التوفير لشركتك</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-brandBlue font-extrabold text-sm">منهجية عمل احترافية</span>
+            <h2 class="text-3xl font-black text-slate-900 mt-2">نستلم منك ملفات الإكسيل.. ونسلمك منظومة رقمية متكاملة</h2>
+        </div>
+        <div class="grid sm:grid-cols-5 gap-4">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-black flex items-center justify-center mx-auto mb-4">1</div>
+                <h4 class="font-extrabold text-sm mb-2">تجهيز السيرفر</h4>
+                <p class="text-xs text-slate-500">تحليل البنية التحتية وتجهيز السيرفر المحلي أو السحابي.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-black flex items-center justify-center mx-auto mb-4">2</div>
+                <h4 class="font-extrabold text-sm mb-2">تثبيت النظام والهيكلية</h4>
+                <p class="text-xs text-slate-500">تثبيت النظام وتكوين الأقسام، الفروع، وصلاحيات المستخدمين.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-black flex items-center justify-center mx-auto mb-4">3</div>
+                <h4 class="font-extrabold text-sm mb-2">ترحيل البيانات (Migration)</h4>
+                <p class="text-xs text-slate-500">تنظيف ورفع بيانات الأصول الحالية وتصنيفها داخل قاعدة البيانات.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-black flex items-center justify-center mx-auto mb-4">4</div>
+                <h4 class="font-extrabold text-sm mb-2">طباعة الـ QR والجرد</h4>
+                <p class="text-xs text-slate-500">تصميم وطباعة ملصقات الباركود الذكية وبدء التكويد الفعلي.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-black flex items-center justify-center mx-auto mb-4">5</div>
+                <h4 class="font-extrabold text-sm mb-2">التدريب والتسليم</h4>
+                <p class="text-xs text-slate-500">تدريب فرق الـ IT والـ HR على إدارة النظام والتسليم النهائي.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandBlue font-extrabold text-sm">باقات مرنة تدفع لمرة واحدة</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">اختر الباقة المناسبة لحجم شركتك</h2>
+                <p class="text-slate-600">جميع الباقات تُدفع كتكلفة تأسيس لمرة واحدة (50% عند التعاقد، 30% بعد التركيب والترحيل، 20% بعد التسليم النهائي والتدريب).</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Basic Package -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-extrabold text-slate-900">الباقة الأساسية</h3>
+                        <p class="text-xs text-slate-500 mt-1">مثالية للشركات التي تمتلك فريق IT جاهز لإدخال البيانات</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-slate-900">5,000 - 8,000</span>
+                            <span class="text-sm font-bold text-slate-500">جنيه مصري</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>تأسيس السيرفر (محلي أو سحابي)</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>تثبيت النظام وإعداد الأقسام والفروع</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>ضبط صلاحيات مديري النظام</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>تسليم النظام جاهزاً للعمل</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="openWhatsApp('مرحباً أصول تك، أود الاستفسار عن الباقة الأساسية لتأسيس نظام إدارة الأصول.')" class="w-full py-3.5 rounded-xl border-2 border-brandBlue text-brandBlue font-extrabold hover:bg-brandBlue hover:text-white transition">
+                        اطلب الباقة الأساسية
+                    </button>
+                </div>
+
+                <!-- Advanced Package -->
+                <div class="bg-brandDark text-white rounded-3xl p-8 border-2 border-brandCyan shadow-2xl relative flex flex-col justify-between transform md:-translate-y-4">
+                    <span class="absolute -top-4 right-8 bg-brandCyan text-slate-950 text-xs font-black px-4 py-1 rounded-full">الأكثر طلباً للشركات</span>
+                    <div>
+                        <h3 class="text-xl font-extrabold">الباقة المتقدمة</h3>
+                        <p class="text-xs text-slate-300 mt-1">حل متكامل يشمل التأسيس وترحيل البيانات والباركود</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-brandCyan">15,000 - 25,000</span>
+                            <span class="text-sm font-bold text-slate-300">جنيه مصري</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan"></i> <span>كافة مميزات الباقة الأساسية</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan"></i> <span>ترحيل البيانات الحالية (Data Migration) من الإكسيل</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan"></i> <span>تصميم وتوليد ملصقات الباركود / QR Codes</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandCyan"></i> <span>تدريب عملي لفريق الـ IT والـ HR</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="openWhatsApp('مرحباً أصول تك، أود الاستفسار عن الباقة المتقدمة (التأسيس + ترحيل البيانات + الباركود).')" class="w-full py-3.5 rounded-xl bg-brandCyan text-slate-950 font-black hover:opacity-90 transition">
+                        اطلب الباقة المتقدمة الآن
+                    </button>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-extrabold text-slate-900">الباقة الاحترافية (Enterprise)</h3>
+                        <p class="text-xs text-slate-500 mt-1">للشركات الكبرى ومتعددة الفروع (ربط كامل وأتمتة)</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-black text-slate-900">+35,000</span>
+                            <span class="text-sm font-bold text-slate-500">جنيه مصري</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>كافة مميزات الباقة المتقدمة</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>الربط الكامل مع Active Directory / LDAP</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>تفعيل الدورة المستندية والتوقيع الإلكتروني للعهد</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> <span>بناء واجهات ربط برمجية (APIs) وتقارير مخصصة</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="openWhatsApp('مرحباً أصول تك، أود الاستفسار عن الباقة الاحترافية (Enterprise) والربط المتكامل.')" class="w-full py-3.5 rounded-xl border-2 border-slate-900 text-slate-900 font-extrabold hover:bg-slate-900 hover:text-white transition">
+                        تواصل لتقييم مشروعك
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandDark text-slate-400 py-12 px-4 border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-2xl font-black text-white mb-2">Osool<span class="text-brandCyan">Tech</span> - أصول تك</h3>
+            <p class="text-sm mb-6">شريكك التقني لحوكمة ورقمنة أصول الشركات في مصر والشرق الأوسط.</p>
+            <p class="text-xs text-slate-500">© 2026 OsoolTech. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // WhatsApp configuration
+        const WHATSAPP_NUMBER = "201030586539";
+
+        function openWhatsApp(message) {
+            const encodedMsg = encodeURIComponent(message);
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMsg}`, '_blank');
+        }
+
+        // ROI Calculation Logic
+        function calculateROI() {
+            const assets = parseInt(document.getElementById('assetsSlider').value);
+            const branches = parseInt(document.getElementById('branchesSlider').value);
+
+            document.getElementById('assetsCountDisplay').innerText = assets.toLocaleString('ar-EG') + ' جهاز';
+            document.getElementById('branchesCountDisplay').innerText = branches.toLocaleString('ar-EG') + (branches === 1 ? ' فرع' : ' فروع');
+
+            // Estimated savings calculation: 400 EGP per asset + 2500 EGP per branch
+            const estimatedSavings = (assets * 400) + (branches * 2500);
+            const savedHours = Math.round((assets * 0.6) + (branches * 6));
+
+            document.getElementById('savingsDisplay').innerText = estimatedSavings.toLocaleString('ar-EG') + ' ج.م';
+            document.getElementById('hoursDisplay').innerHTML = `بالإضافة إلى توفير حوالي <strong>${savedHours} ساعة عمل سنوياً</strong> لفريق الـ IT في عمليات الجرد اليدوي.`;
+        }
+
+        // Action trigger for the ROI section
+        function sendROIViaWhatsApp() {
+            const assets = document.getElementById('assetsSlider').value;
+            const branches = document.getElementById('branchesSlider').value;
+            const savings = document.getElementById('savingsDisplay').innerText;
+            const msg = `مرحباً أصول تك، قمت بحساب التوفير على موقعكم لشركتي (عدد الأصول: ${assets} جهاز، عدد الفروع: ${branches}، التوفير السنوي المتوقع: ${savings}). أرغب في حجز جلسة Live Demo.`;
+            openWhatsApp(msg);
+        }
+    </script>
+</body>
+</html>
